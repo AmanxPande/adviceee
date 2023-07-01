@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 100vh;
+  background-color: rgb(35, 46, 66);
+
+}
+
+.adviceCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 470px;
+  background-color: rgb(56, 71, 100);
+  border-radius: 15px;
+  margin:0 auto;
+  padding: 50px 32px 70px 32px;
+  position: relative;
+  text-align: center;
+
+}
+
+p{
+  color: rgb(113, 249, 204);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+h1{
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+.diceImg{
+  background-color: rgb(110, 203, 172);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: -32px;
+  cursor: pointer;
+  
+}
+
+.diceImg:hover{
+  box-shadow: 0 0 40px 0 rgb(98, 197, 164);
+  transition: .2s ease-in;
+}
+
+.divider-mobile {
+  display: none;
+ }
+
+ @media(max-width: 924px){
+  .divider-mobile {
+    display: block;
+  }
+
+  .divider-desktop {
+    display: none;
+  }
+ }
+
+ @media(max-width: 620px){
+  .adviceCard {
+    width: 90%;
+  }
+
+  @media(max-width: 375px){
+    h2 {
+      font-size: 24px;
+    } 
+    p {
+      font-size: 11px;
+    }
+  }
+ }
